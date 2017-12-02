@@ -19,8 +19,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="391" />
-    <option name="y" value="462" />
+    <option name="x" value="288" />
+    <option name="y" value="129" />
     <option name="width" value="1510" />
     <option name="height" value="1045" />
   </component>
@@ -57,7 +57,19 @@
               <item name="discordBot" type="b2602c69:ProjectViewProjectNode" />
               <item name="discordBot" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="commands" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="discordBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="discordBot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="DiscordBot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="discordBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="discordBot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -66,6 +78,11 @@
       <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -176,7 +193,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="391" y="462" width="1510" height="1045" extended-state="0" />
+    <frame x="288" y="129" width="1510" height="1045" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
