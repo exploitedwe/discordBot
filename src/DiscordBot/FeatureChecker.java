@@ -1,4 +1,4 @@
-package BotProject.DiscordBot;
+package DiscordBot;
 
 public class FeatureChecker {
 
