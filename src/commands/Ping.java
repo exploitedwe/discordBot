@@ -1,10 +1,8 @@
-package BotProject.commands;
-import BotProject.DiscordBot.Command;
-import BotProject.DiscordBot.DevBot;
+package commands;
+
+import DiscordBot.Command;
+import DiscordBot.DevBot;
 import net.dv8tion.jda.core.EmbedBuilder;
-import net.dv8tion.jda.core.MessageBuilder;
-import net.dv8tion.jda.core.entities.Message;
-import net.dv8tion.jda.core.entities.impl.MessageImpl;
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 
 import java.awt.*;
@@ -24,9 +22,7 @@ public class Ping implements Command {
         EmbedBuilder eb = new EmbedBuilder();
         eb.setColor(Color.ORANGE);
         eb.setDescription(message);
-        //event.getTextChannel().sendMessage(eb.build()).complete();
-        event.getGuild().getTextChannelById(DevBot.GET_Music_Text_ID()).sendMessage("!play https://www.youtube.com/watch?v=a7Q_ymVD1U4").complete();
-        event.getGuild().getTextChannelById(DevBot.GET_Music_Text_ID()).sendMessage("!clean").complete();
+        event.getTextChannel().sendMessage(eb.build()).complete();
     }
 
     @Override

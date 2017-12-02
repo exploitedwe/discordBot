@@ -1,7 +1,6 @@
-package BotProject.commands;
+package commands;
 
-import BotProject.DiscordBot.Command;
-import BotProject.DiscordBot.Main;
+import DiscordBot.Command;
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 
 import java.util.Date;
