@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="lavaplayer1">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../Code_Hub/lavaplayer" />
+    </SOURCES>
+  </library>
+</component>

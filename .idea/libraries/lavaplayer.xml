@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="lavaplayer">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../Code_Hub/lavaplayer-master.zip!/lavaplayer-master/common/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/../../Code_Hub/lavaplayer-master.zip!/lavaplayer-master/demo-d4j/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/../../Code_Hub/lavaplayer-master.zip!/lavaplayer-master/demo-jda/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/../../Code_Hub/lavaplayer-master.zip!/lavaplayer-master/main/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/../../Code_Hub/lavaplayer-master.zip!/lavaplayer-master/node/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/../../Code_Hub/lavaplayer-master.zip!/lavaplayer-master/testbot/src/main/java" />
+    </SOURCES>
+  </library>
+</component>
