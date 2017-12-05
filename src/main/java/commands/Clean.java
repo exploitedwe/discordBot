@@ -15,12 +15,40 @@ public class Clean implements Command {
         return true;
     }
 
-    private int deletionsLeft = 0;
     @Override
     public void action(String[] args, MessageReceivedEvent event) {
-        //System.out.println("Cleaning!");
+        System.out.println("Made it to delete Message Parent.");
+        String[] command = event.getMessage().getContent().toLowerCase().split(" ");
+        if(command[1].contains("all")) deleteAllMessages(event);
+        if(command[1].contains("bot")) deleteBotMessages(event);
+    }
+
+
+    private void deleteBotMessages(MessageReceivedEvent event){
+        System.out.println("Made it to deleteBotMessages");
         String[] content = event.getMessage().getContent().split(" ");
-        deletionsLeft = Integer.parseInt(content[1]);
+
+        int messagesToSift = Integer.parseInt(content[2]);
+        List<Message> list = event.getChannel().getHistory().retrievePast(50).complete();
+        //System.out.print("List Size: " + list.size() + " ");
+        int i = 0;
+        int deleted = 0;
+
+        while(i < messagesToSift) {
+            if(list.get(i).getAuthor().isBot()&&
+                    !list.get(i).getContent().toLowerCase().contains("has joined the")) {
+                list.get(i).delete().complete();
+                deleted++;
+            }
+            i++;
+        }
+        event.getChannel().sendMessage("Cleaned "+deleted+" bot messages. :wastebasket:").complete();
+    }
+
+    private void deleteAllMessages(MessageReceivedEvent event){
+        System.out.println("Made it to deleteAllMessages!");
+        String[] content = event.getMessage().getContent().split(" ");
+        int deletionsLeft = Integer.parseInt(content[2]);
         List<Message> list = event.getChannel().getHistory().retrievePast(deletionsLeft).complete();
         //System.out.print("List Size: " + list.size() + " ");
         int i = 0;
@@ -28,12 +56,6 @@ public class Clean implements Command {
             list.get(i++).delete().complete();
         }
         event.getChannel().sendMessage("Cleaned "+i+" messages. :wastebasket:").complete();
-        return;
-    }
-
-
-    private void deleteBotMessages(MessageReceivedEvent event){
-        return;
     }
 
     @Override
